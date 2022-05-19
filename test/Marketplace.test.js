@@ -11,6 +11,7 @@ contract('Marketplace', ([deployer, seller, buyer]) => {
     marketplace = await Marketplace.deployed()
   })
 
+  
   describe('deployment', async () => {
     it('deploys successfully', async () => {
       const address = await marketplace.address
@@ -58,7 +59,6 @@ contract('Marketplace', ([deployer, seller, buyer]) => {
       assert.equal(product.owner, seller, 'owner is correct')
       assert.equal(product.purchased, false, 'purchased is correct')
     })
-
     it('sells products', async () => {
       // Track the seller balance before purchase
       let oldSellerBalance
