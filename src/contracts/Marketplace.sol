@@ -5,7 +5,7 @@ contract Marketplace {
     uint public productCount = 0;
     mapping(uint => Product) public products;
 
-    struct Product {
+    struct Product { 
         uint id;
         string name;
         uint price;

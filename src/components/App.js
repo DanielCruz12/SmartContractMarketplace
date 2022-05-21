@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Web3 from 'web3'
 import './App.css';
-import Marketplace from '../abis/Marketplace.json'
-import Navbar from './Navbar'
-import Main from './Main'
+import logo from '../lappsnet.jpg';
+import Marketplace from '../abis/Marketplace.json';
+import Navbar from './Navbar';
+import Main from './Main';
 
 class App extends Component {
 
